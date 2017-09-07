@@ -1,2 +1,2 @@
 # CUSP_WebAPIwork
-HW etc from ITC WebAPI Class
+Code and related from ITC WebAPI course
