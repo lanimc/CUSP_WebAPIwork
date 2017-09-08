@@ -1,0 +1,87 @@
+body {
+    font-family: Lato;
+}
+main {
+    overflow-x:auto;
+    margin: 0 auto;
+    width: 95%
+}
+
+.blabel {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    background: url('beercloseup.jpg') #ADCCB9;
+    //*border-bottom: solid 1pt #ccc;*//
+    padding: 10px;
+    text-shadow: 2px 2px 4px #777;
+    height: 100px;
+}
+
+.userParameters {
+
+    padding: 10px ;
+    background: #FFFBE2;
+    
+}
+
+.searchResults {
+    
+    padding: 10px ;
+
+  background: #FFFBE2; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#FFFBE2 , #fff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( #FFFBE2 , #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( #eFFFBE2 , #fff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( #FFFBE2 , #fff); /* Standard syntax */
+
+}
+
+#inputBox {
+    color: crimson;
+}
+.beers {
+    width: 45%;
+    padding: 10px;
+    border-right: solid 1pt #ccc;
+    float: left;
+}
+
+.food {
+    width: 45%;
+    padding: 10px;
+    float: right;
+}
+
+table {
+    border-collapse: collapse;
+    
+
+}
+
+td, th {
+  padding: 4px 8px;
+  border: 1px solid #efefef;
+  text-align: left;
+  vertical-align: middle;
+  width:33%;
+  font-size: .75em;
+  color: #4D557F;
+ 
+}
+
+tr:first-child th {
+  background-color:#4D557F;
+  color: #fff;
+  font-size: 1em;    
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #FFFE6C;
+}

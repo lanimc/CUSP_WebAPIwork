@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<title>Class 4 - NYTimes</title> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        
+	</head>
+	<body>
+		<header>
+			<h1>NYTIMES</h1>
+		</header>
+
+		<main>
+		</main>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script>
+ function getNYTimesData() {
+		console.log("Running Get NY Times Data Function");
+
+		var nyTimesURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+        nyTimesURL += '?' + $.param({'api-key': "1b4e7b3b04544a5599f76edfeb723996"});
+		
+		console.log(nyTimesURL);
+		$.ajax({
+			url: nyTimesURL,
+			method: 'GET',
+			dataType: 'json',
+        }).fail(function(err){
+				console.log("Uh oh...");
+				console.log(err);
+			})
+			.done( function(data){
+				//console.log(data);
+				nyTimesArticles = data.response.docs;
+				console.log(nyTimesArticles);
+				
+			}
+                     );
+	}
+    
+ 
+
+
+    
+    getNYTimesData();
+    </script>
+
+	</body>
+</html>
+
